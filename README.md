@@ -23,8 +23,8 @@ This will do nothing of all those things, just export in a **really nice** .txt 
 ## Install
 
 - Dependencies:
-    * Pip 
-    * Python (tested on Python 3.9)
+    * Pip (should be already installed with Python 🤷)
+    * [Python](https://www.python.org/downloads/) (tested on Python 3.9)
 
 Execute dependencies installer:
 
