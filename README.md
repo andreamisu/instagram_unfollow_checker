@@ -43,4 +43,6 @@ change "xxxx" with your **Instagram name**, "yyyy" with your **password**, "zzzz
 Mostly based on Ping's [Instagram private API](https://github.com/ping/instagram_private_api), 
 [so go buy him a coffee!](https://www.buymeacoffee.com/ping)
 
-Thanks to @bwitch_ and @grlvoid for **spiritual** and **corporate** guidance.
+You can say thank you [following me on IG 🦋✨](https://www.instagram.com/instamisu/)
+
+Thanks to @[bwitch_](https://www.instagram.com/bwitch_/) and @[grlvoid](https://www.instagram.com/grlvoid/) for **spiritual** and **corporate** guidance.
