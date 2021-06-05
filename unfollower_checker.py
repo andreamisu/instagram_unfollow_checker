@@ -128,16 +128,20 @@ if __name__ == '__main__':
     followers_count = api.user_detail_info(api.authenticated_user_id).get("user_detail").get("user").get("follower_count")
     print("Actual followers: " + str(followers_count) + "\n")
     print("Checking followers......\n")
-    while 1:
-        if(follower_count > followers_count):
-            break
-        follwers = api.user_followers(api.authenticated_user_id, uuid, max_id=maxid)
-        for x in follwers.get("users"):
-            username = x.get("username")
-            print(str(username))
-            follower_count += 1
-            followers.append(username)
-        maxid = follwers.get("next_max_id")
+    try:
+        while 1:
+            print("--------------------------------")
+            print("Follower counted: " + str(follower_count))
+            follwers = api.user_followers(api.authenticated_user_id, uuid, max_id=maxid)
+            for x in follwers.get("users"):
+                username = x.get("username")
+                print(str(username))
+                follower_count += 1
+                followers.append(username)
+            maxid = follwers.get("next_max_id")
+    except Exception as e:
+        if(str(e) != "Bad Request: unable to fetch followers"):
+            exit(1)
 
     #Check followers only if previous records are present
     if(len(previousFollowers) > 0):
